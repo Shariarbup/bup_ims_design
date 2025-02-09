@@ -26,43 +26,50 @@
     <body>
 
         <div class="container-fluid chalan-form-container mt-3">
-            <h3 class="text-center">Add Chalan</h3>
+            <h3 class="text-center">Yearly Demand</h3>
            <form action="" method="post" class="mt-4">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="mb-3">
-                        <label for="chalan-no" class="form-label">Chalan No</label>
-                        <input class="form-control" type="text" placeholder="" id="chalan-no">
-                    </div>
-                    <div class="mb-3">
-                        <label for="chalan-name" class="form-label">Chalan Name</label>
-                        <input class="form-control" type="text" placeholder="" id="chalan-name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="chalan-date" class="form-label">Chalan Date</label>
-                        <input class="form-control" type="datetime-local" placeholder="" id="chalan-date">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Supplier</label>
+                        <label class="form-label">Item</label>
                         <select class="form-select">
-                            <option>Supplier 1</option>
-                            <option>Supplier 2</option>
-                            <option>Supplier 3</option>
+                            <option>item 1</option>
+                            <option>item 2</option>
+                            <option>item 3</option>
                         </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Yearly Demand Category</label>
+                        <select class="form-select">
+                            <option>Yearly Demand 1</option>
+                            <option>Yearly Demand 2</option>
+                            <option>Yearly Demand 3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="demand-date" class="form-label">Demand Date</label>
+                        <input class="form-control" type="datetime-local" placeholder="" id="demand-date">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="mb-3">
-                        <label for="chala-document" class="form-label">Chalan Document</label>
-                        <input class="form-control" type="file" id="chala-document">
+                        <label for="unit-quantity" class="form-label">Unit Quantity</label>
+                        <input class="form-control" type="number" placeholder="" id="unit-quantity">
                     </div>
                     <div class="mb-3">
-                        <label for="acceptence-committe-document" class="form-label">Acceptance Committe Document</label>
-                        <input class="form-control" type="file" id="acceptence-committe-document">
+                        <label for="user-list" class="form-label">User</label>
+                        <input class="form-control" list="userListOptions" id="user-list" placeholder="Type to search...">
+                        <datalist id="userListOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
                     </div>
                     <div class="mb-3">
-                        <label for="procurement-work-order-number" class="form-label">Procurement Work Order No</label>
-                        <input class="form-control" type="text" placeholder="" id="procurement-work-order-number">
+                        <label for="fiscal-year" class="form-label">Fiscal Year</label>
+                        <input class="form-control" type="file" id="fiscal-year">
                     </div>
                 </div>
             </div>
